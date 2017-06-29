@@ -1,0 +1,310 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+body{
+  font-family:'Merriweather';
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: rgba(51,51,51,0.9);
+  height: auto;
+  padding: 20px;
+  color: white;
+  width:100%; 
+}
+
+.App-header > .container > h2 {
+  margin-top:5px;
+  margin-bottom: 25px;
+}
+
+.App-header > form {
+  margin-top:32px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+#searchSection {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 735px;
+  max-height: 1000px;
+  background-image: url("images/hall.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.date{
+  color:#000;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type=date]::-webkit-datetime-edit-fields-wrapper {
+  background-color:#E74C3C; 
+  color:#fff;
+  border-radius: 3px;
+  padding: 5px 5px 5px 5px;
+}
+
+input[type="date"]:before {
+  content: attr(placeholder) !important;
+  color: #000;
+  margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+  content: "";
+}
+
+#bookingSection{
+  display: flex;
+  width: 100%;
+  height: 735px;
+  max-height: 1000px;
+  background-image: url("images/hotel_room.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  align-items: center;
+}
+.bookBtn{
+  margin-right: 35px;
+}
+.hide{
+  display:none;
+}
+.available{
+  border-right:solid 1px #ccc;
+}
+.bookings{
+  border-radius: 5px;
+  border: solid 1px #ccc;
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #fff
+}
+
+.cartBtn{
+padding:2px 12px !important;
+}
+
+
+
+#contactSection{
+  display: flex;
+  width: 100%;
+  height: 735px;
+  max-height: 1000px; 
+  background-image: url("images/corridor.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;  
+  align-items: center;
+}
+
+#finishSection{
+  display: flex;
+  width: 100%;
+  height: 735px;
+  max-height: 1000px;
+  background-color: #fff;
+  background-image: url("images/towels.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  align-items: center;
+}
+
+
+/* los 2 forms */
+.formBook
+{
+  background-color: #fff;
+  border:solid 1px #ccc;
+  border-radius: 7px;
+  padding: 10px;
+}
+/* return button */
+.returnBook{
+  padding:8px 45px 8px 45px !important;
+}
+
+.imgSlides {
+  /*max-height: 500px;*/
+  max-height: 240px;
+  width: 100%;
+}
+/* carrito */
+.dropdown-menu{
+  max-width: 275px;
+  position:fixed !important;
+  top:31px !important;
+  padding: 10px !important;
+}
+/* carrito */
+.topcorner{
+  position:fixed !important;
+  top:0 !important;
+}
+.dropdownCart{
+  height: 50px;
+  width: 100px;
+  border: solid 1px #000;
+  display: none;
+}
+.topCart{
+  padding-top: 5px;
+}
+.totalCart{
+    border-top: solid 1px #333;
+    max-width: 10%;
+    padding-bottom: 10px;
+}
+/* form */
+input,select{
+  padding: 5px 2.5px 5px 20px;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  transition: 0.2s ease-out;
+  color: darken(#EDEDED, 30%);
+  text-align: center;
+}
+/* form */
+select {
+  color:#000000 !important;
+  padding-left:8px;
+  padding: 10px 2.5px 9px 9px;
+}
+/* form */
+#submit {
+  margin: 0 auto;
+  float: none;
+  padding: 12px 50px 12px 50px;
+  color: white; 
+  background: #5CB85C;
+  cursor: pointer;
+  border: none;
+}/* form */
+#submit:hover {
+  box-shadow : (0 1px 1px 1px rgba(#aaa, 0.6));
+}
+/* 2 forms */
+.col-boot{
+  padding-bottom:15px;
+}
+/* 2 forms */
+.col-boot input{
+  width:100%;
+  text-align: left;
+  padding-left:10px;
+}
+
+#contactForm{
+  background-color: #F1F1F1;
+  max-width:485px;
+  min-height: 375px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#contactForm .col-boot{
+  padding:10px 0 10px 0;
+}
+
+#contactForm input{
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+.Name{
+  max-width: 210px !important;
+  float: left !important;
+}
+.Surname{
+  max-width: 210px !important;
+  float: right !important;
+}
+#contactForm .returnBook{
+  margin-left: 15px;
+}
+
+.buttonsDetail{
+  padding-top: 20px;
+}
+
+.inputs{
+  margin-top: 25px;
+}
+
+#finishSection .formBook{
+  max-width:458px;
+  padding-bottom: 35px;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+.highlightRed{
+  color:#E74C3C;
+  font-weight: bold;
+}
+.highlightGreen{
+  color:#449D44;
+  font-weight: bold;
+}
+
+.separator{
+  border-top:solid 1px #333;
+  max-width:50%;
+  margin: 0 auto;
+  padding:5px 0 5px 0;
+}
+
+
+
+/* plugin slides */
+.slide-appear {
+  opacity : 0;
+  transition : opacity 0.5s ease-in;
+}
+
+.slide-appear.slide-appear-active {
+  opacity : 1;
+}
+
+.slide-enter {
+  max-height : 0;
+  transition : all .3s ease-in;
+}
+
+.slide-enter.slide-enter-active {
+  max-height : 1000px;
+}
+
+.slide-leave {
+  max-height : 1000px;
+  transition : all .3s ease-out;
+}
+
+.slide-leave.slide-leave-active {
+  max-height : 0;
+}
