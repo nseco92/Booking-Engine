@@ -213,10 +213,6 @@ module.exports = {
             extractTextPluginOptions
           )
         ),
-        {
-  test: /\.sass$/,
-  loader: ExtractTextPlugin.extract('style', 'css?importLoaders=1&-autoprefixer!postcss!sass')
-},
         // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
       },
       // ** STOP ** Are you adding a new loader?

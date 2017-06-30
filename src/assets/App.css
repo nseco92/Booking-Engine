@@ -74,7 +74,7 @@ input[type="date"]:valid:before {
 }
 
 #bookingSection{
-  display: flex;
+  /*display: flex;*/
   width: 100%;
   height: 735px;
   max-height: 1000px;
@@ -85,8 +85,14 @@ input[type="date"]:valid:before {
   background-size: cover;
   align-items: center;
 }
+.bookingContainer{
+  padding-top: 10%;
+}
 .bookBtn{
   margin-right: 35px;
+}
+.cartContainer{
+  float: left;
 }
 .hide{
   display:none;

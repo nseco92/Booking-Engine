@@ -124,15 +124,16 @@ class App extends Component {
   }
 
   changeToBooking(target) {
+    /*
     if(this.state.actualSearch == ""){
       alert("Please put a correct date");
     }
-    else{
+    else{*/
       this.restartRooms();
       this.setState({
          current: 1,
         });
-    } 
+    /*} */
   }
 
   changeToBookingFromDetails(target){
@@ -450,8 +451,16 @@ class App extends Component {
            
           <Deck.Slide className='bg-green'>
             <section id ="bookingSection">
+              <Row className="cartContainer">
+              <Col xs={12} sm={4} md={12}>
               <UpdateCart onMinus={this.onMinusRooms.bind(this)} cartRooms = {this.state.cartRooms} cartData = {this.state.cart} minus= "false" />
+              </Col>
+              </Row>
+              <Row className="bookingContainer">
+              <Col xs={12} sm={4} md={12}>
               <TotalRooms onBookRooms = {this.handleGoToDetails.bind(this)} onReturnButton={this.handleReturnToSearch.bind(this)} onCartRoom={this.handleCartRoom.bind(this)} currentSlide2 = {this.state.current} totalDaysSearch = {this.state.totalDaysSearch} actualSearch = {this.state.actualSearch} bookingDB = {this.state.bookingDB}  totalHotelRooms={this.state.totalHotelRooms} />
+              </Col>
+              </Row>
             </section>
           </Deck.Slide>
             

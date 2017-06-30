@@ -38,7 +38,7 @@ class UpdateCart extends Component {
 
     if(sing[0] == 0 && double[0] == 0 && suite[0] ==0 &&triple[0] ==0){
       return (
-        <DropdownButton className="topcorner" title="Shopping Cart" id="bg-nested-dropdown">
+        <DropdownButton className="topcorner-" title="Shopping Cart" id="bg-nested-dropdown">
           <Col xs={12} sm={12} md={12} >
             "There is no bookings"
           </Col>  

@@ -10,10 +10,20 @@ module.exports = {
     },
 
      module: {
+         rules: [{
+            test: /\.scss$/,
+            use: [{
+                loader: "style-loader" // creates style nodes from JS strings
+            }, {
+                loader: "css-loader" // translates CSS into CommonJS
+            }, {
+                loader: "sass-loader" // compiles Sass to CSS
+            }]
+        }],
         loaders: [
             {
                 test: /\.js$/,
-                exclude: /(node_modules)/,/\.sass$/,
+                exclude: /(node_modules)/,/\.sass$/,/\.scss$/,
                 loader: 'babel-loader',
                 query: {
                     presets: ['es2015']
@@ -24,9 +34,11 @@ module.exports = {
                 loader: 'style-loader!css-loader!sass-loader'
             },
             {
-              test: /\.sass$/,
-              include: paths.appSrc,
-              loaders: ['style', 'css', 'sass']
+              {
+  test: /\.scss$/,
+  include: paths.appSrc,
+  loaders: ["style", "css", "sass"]
+},
             }
         ] //loaders
     } //module
